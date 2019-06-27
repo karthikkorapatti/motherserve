@@ -7,6 +7,7 @@ define('PREP_REGISTRATION_SUBJECT', 'Confirm your Foodies Registration');
 define('VERIFICATION_PHONENO_MESSAGE', 'Your verification code is');
 
 //DATABASE
+define('DATABASE_HOST', '');
 define('DATABASE_USER', '');
 define('DATABASE_PASSWORD', '');
 define('DATABASE_NAME', '');

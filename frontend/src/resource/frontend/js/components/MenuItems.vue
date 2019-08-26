@@ -101,6 +101,8 @@
 </template>
 
 <script type="text/javascript">
+import moment from "moment";
+
 export default {
 	data() {
 		return {
@@ -135,8 +137,9 @@ export default {
 		},
 
 		getRestaurant() {
-			axios.post(`${this.$root.urls.api}/showRestaurantDetail`, {
-				restaurant_id: '2'
+			axios.post(`${this.$root.urls.api}/showRestaurantsMenu`, {
+				id: 0,
+				current_time: moment().format('YYYY-DD-MM HH:mm:ss')
 			})
 			.then(({ data }) => {
 				console.log(data);
